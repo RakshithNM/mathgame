@@ -1,0 +1,35 @@
+{
+  "name": "mathgame",
+  "version": "1.0.0",
+  "private": true,
+  "description": "a simple math game",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RakshithNM/mathgame.git"
+  },
+  "keywords": [
+    "mathematics",
+    "game"
+  ],
+  "author": "RakshithNM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RakshithNM/mathgame/issues"
+  },
+  "homepage": "https://github.com/RakshithNM/mathgame#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^5.0.0",
+    "vue-loader": "^15.9.6",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "vue": "^2.6.12"
+  }
+}
