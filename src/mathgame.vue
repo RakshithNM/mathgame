@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <operator v-for="operator in operators" :operator="operator" :key="operator" />
+    <nav>
+      <operator v-for="operator in operators" :operator="operator" :key="operator" />
+    </nav>
     <router-view></router-view>
   </div>
 </template>
@@ -25,3 +27,16 @@ export default {
   }
 }
 </script>
+
+<style lang="sass">
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+</style>

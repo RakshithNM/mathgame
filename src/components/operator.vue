@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <router-link :to="`${operator}`">{{ operator }}</router-link>
-  </div>
+  <router-link :to="`${operator}`">{{ operator }}</router-link>
 </template>
 
 <script>
@@ -19,7 +17,13 @@ export default {
 </script>
 
 <style scoped lang="sass">
-h1 {
-  color: blue;
+a {
+  width: 25%;
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+.router-link-active {
+  background: red;
 }
 </style>

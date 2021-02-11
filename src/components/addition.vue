@@ -1,5 +1,7 @@
 <template>
-    <h1>HI FROM Addition</h1>
+  <div>
+    <h1>{{ title }}</h1>
+  </div>
 </template>
 
 <script>
@@ -8,6 +10,7 @@ import Vue from 'vue';
 export default {
   data() {
     return {
+      title: "ADDITION",
     }
   },
   props: {
@@ -19,5 +22,6 @@ export default {
 <style scoped lang="sass">
 h1 {
   color: blue;
+  text-align: center;
 }
 </style>

@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import app from './mathgame.vue';
+import home from './components/home.vue';
 import addition from './components/addition.vue';
 import subtraction from './components/subtraction.vue';
 import multiplication from './components/multiplication.vue';
@@ -9,6 +10,7 @@ import division from './components/division.vue';
 Vue.use(VueRouter);
 
 const routes = [
+    { path: '/', component: home },
     { path: '/addition', component: addition },
     { path: '/subtraction', component: subtraction },
     { path: '/multiplication', component: multiplication },
