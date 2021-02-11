@@ -5,7 +5,8 @@
   "description": "a simple math game",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.dev.js"
+    "serve": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -23,13 +24,21 @@
   "homepage": "https://github.com/RakshithNM/mathgame#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.2",
     "html-webpack-plugin": "^5.0.0",
+    "mini-css-extract-plugin": "^1.3.6",
+    "sass": "^1.32.7",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
     "vue-loader": "^15.9.6",
     "vue-template-compiler": "^2.6.12",
     "webpack": "^5.21.2",
-    "webpack-cli": "^4.5.0"
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
   },
   "dependencies": {
-    "vue": "^2.6.12"
+    "vue": "^2.6.12",
+    "vue-router": "^3.5.1"
   }
 }

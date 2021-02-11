@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <router-link :to="`${operator}`">{{ operator }}</router-link>
-  </div>
+    <h1>HI FROM Addition</h1>
 </template>
 
 <script>

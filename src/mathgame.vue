@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <h1>{{greeting}}</h1>
-    <operator />
+    <operator v-for="operator in operators" :operator="operator" :key="operator" />
+    <router-view></router-view>
   </div>
 </template>
 
@@ -12,7 +12,12 @@ import operator from './components/operator.vue';
 export default {
   data() {
     return {
-      greeting: "abc"
+      operators: [
+        "addition",
+        "subtraction",
+        "multiplication",
+        "division"
+      ]
     }
   },
   components: {

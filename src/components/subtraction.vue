@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <router-link :to="`${operator}`">{{ operator }}</router-link>
-  </div>
+    <h1>HI FROM subtraction</h1>
 </template>
 
 <script>
@@ -22,4 +20,4 @@ export default {
 h1 {
   color: blue;
 }
-</style>
+</style
