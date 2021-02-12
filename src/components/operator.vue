@@ -21,7 +21,7 @@ a {
   width: 25%;
   height: 2rem;
 
-  background: black;
+  background: #1d3b53;
   color: white;
   text-decoration: none;
 
@@ -30,6 +30,6 @@ a {
   align-items: center;
 }
 .router-link-active {
-  background: red;
+  background: #011627;
 }
 </style>

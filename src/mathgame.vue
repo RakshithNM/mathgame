@@ -33,7 +33,7 @@ export default {
 body {
   margin: 0;
   font-family: 'JetBrains Mono', monospace;
-  background: red;
+  background: #011627;
 }
 
 nav {
