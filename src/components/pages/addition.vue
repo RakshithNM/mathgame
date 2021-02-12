@@ -1,27 +1,32 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
+    <question :operator="operator" />
   </div>
 </template>
 
 <script>
 import Vue from 'vue';
+import question from '../questions/question.vue';
 
 export default {
   data() {
     return {
       title: "ADDITION",
+      operator: "+"
     }
   },
-  props: {
-    operator: String
+  components: {
+    question
   }
 }
 </script>
 
 <style scoped lang="sass">
-h1 {
-  color: blue;
-  text-align: center;
+div {
+  h1 {
+    color: white;
+    text-align: center;
+  }
 }
 </style>

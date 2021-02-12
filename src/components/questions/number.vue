@@ -1,5 +1,5 @@
 <template>
-    <h1>HI FROM subtraction</h1>
+    <p>{{ number }}</p>
 </template>
 
 <script>
@@ -11,13 +11,13 @@ export default {
     }
   },
   props: {
-    operator: String
+    number: Number 
   }
 }
 </script>
 
 <style scoped lang="sass">
-h1 {
-  color: blue;
+p {
+    display: inline;
 }
-</style
+</style>

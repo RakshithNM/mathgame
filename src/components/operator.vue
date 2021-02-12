@@ -19,9 +19,15 @@ export default {
 <style scoped lang="sass">
 a {
   width: 25%;
+  height: 2rem;
+
   background: black;
   color: white;
   text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .router-link-active {
   background: red;

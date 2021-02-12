@@ -29,13 +29,18 @@ export default {
 </script>
 
 <style lang="sass">
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');;
 body {
   margin: 0;
+  font-family: 'JetBrains Mono', monospace;
+  background: red;
 }
 
 nav {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   text-align: center;
 }
