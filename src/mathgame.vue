@@ -39,9 +39,10 @@ body {
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
+  background-color: #1d3b53;
 }
 </style>

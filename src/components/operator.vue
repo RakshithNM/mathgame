@@ -18,7 +18,6 @@ export default {
 
 <style scoped lang="sass">
 a {
-  width: 25%;
   height: 2rem;
 
   background: #1d3b53;
@@ -30,6 +29,7 @@ a {
   align-items: center;
 }
 .router-link-active {
+  padding: 0 2rem;
   background: #011627;
 }
 </style>
