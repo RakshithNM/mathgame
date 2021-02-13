@@ -1,5 +1,5 @@
 <template>
-    <p>{{ number }}</p>
+  <p>{{ number }}</p>
 </template>
 
 <script>
@@ -18,7 +18,7 @@ export default {
 
 <style scoped lang="sass">
 p {
-    display: inline;
-    color: white;
+  display: inline;
+  color: white;
 }
 </style>

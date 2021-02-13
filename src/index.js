@@ -10,22 +10,22 @@ import division from './components/pages/division.vue';
 Vue.use(VueRouter);
 
 const routes = [
-    { path: '/', component: home },
-    { path: '/addition', component: addition },
-    { path: '/subtraction', component: subtraction },
-    { path: '/multiplication', component: multiplication },
-    { path: '/division', component: division }
+	{ path: '/', component: home },
+	{ path: '/addition', component: addition },
+	{ path: '/subtraction', component: subtraction },
+	{ path: '/multiplication', component: multiplication },
+	{ path: '/division', component: division }
 ];
 
 const router = new VueRouter({
-    mode: 'history',
-    routes
+	mode: 'history',
+	routes
 })
 
 new Vue({
-    el: '#app',
-    router,
-    render: function(createElement) {
-        return createElement(app)
-    }
-  })
+	el: '#app',
+	router,
+	render: function (createElement) {
+		return createElement(app)
+	}
+})
