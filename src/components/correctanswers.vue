@@ -1,5 +1,7 @@
 <template>
-    <p>{{ number }}</p>
+  <div>
+    <p>Total correct answers are : {{ count }}</p>
+  </div>
 </template>
 
 <script>
@@ -11,14 +13,16 @@ export default {
     }
   },
   props: {
-    number: Number 
-  }
+    count: Number
+  } 
 }
 </script>
 
 <style scoped lang="sass">
-p {
-    display: inline;
+div {
+  p {
     color: white;
+    text-align: center;
+  }
 }
 </style>

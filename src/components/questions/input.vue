@@ -1,6 +1,6 @@
 <template>
     <form @submit.prevent="answerTheQuestion">
-        <input type="number" v-model="answer" /> 
+        <input type="number" v-model="answer" step="any" /> 
     </form>
 </template>
 
