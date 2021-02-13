@@ -1,8 +1,8 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <question :operator="operator" v-on:updatecount="setCount" />
     <correctanswercount :count="count" />
+    <question :operator="operator" v-on:updatecount="setCount" />
   </div>
 </template>
 
