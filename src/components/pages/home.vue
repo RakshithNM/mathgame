@@ -30,6 +30,7 @@ div {
   }
   p {
     color: #ef5350;
+    text-align: center;
   }
 }
 
