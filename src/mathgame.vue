@@ -3,7 +3,9 @@
     <nav>
       <operator v-for="operator in operators" :operator="operator" :key="operator" />
     </nav>
-    <router-view></router-view>
+    <transition name="fade-left">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
@@ -44,5 +46,26 @@ nav {
   flex-wrap: wrap;
   text-align: center;
   background-color: #1d3b53;
+}
+.fade-left-enter-active,
+.fade-left-leave-active,
+.fade-right-enter-active,
+.fade-right-leave-active {
+  transition-duration: 0.5s;
+  transition-property: height, opacity, transform;
+  transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+  overflow: hidden;
+}
+
+.fade-left-enter,
+.fade-right-leave-active {
+  opacity: 0;
+  transform: translate(2em, 0);
+}
+
+.fade-left-leave-active,
+.fade-right-enter {
+  opacity: 0;
+  transform: translate(-2em, 0);
 }
 </style>
