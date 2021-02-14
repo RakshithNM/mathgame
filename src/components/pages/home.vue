@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <p>Select the operator you want to play the game with</p>
+    <p>Select the operator you want to play the game with from the top navigation</p>
   </div>
 </template>
 
@@ -25,8 +25,11 @@ div {
   align-items: center;
   height: calc(100vh - 2rem);
   h1 {
-    color: blue;
+    color: #c5e4fd;
     text-align: center;
+  }
+  p {
+    color: #ef5350;
   }
 }
 
